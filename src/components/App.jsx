@@ -5,6 +5,7 @@ import ContactList from './ContactList/ContactList';
 import Filter from './Filter/Filter';
 
 export class App extends Component {
+  
   state = {
     contacts: [
       { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
@@ -21,6 +22,7 @@ export class App extends Component {
       name,
       number,
     };
+
     this.state.contacts.some(
       contact => contact.name.toLowerCase() === name.toLowerCase()
     )
