@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Component } from 'react';
 import s from './ContactForm.module.css';
 
-export default class ContactForm extends Component {
+export class ContactForm extends Component {
   state = {
     name: '',
     number: '',
